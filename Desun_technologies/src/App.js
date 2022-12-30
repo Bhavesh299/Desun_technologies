@@ -1,14 +1,14 @@
-
+import {Route,Routes} from "react-router-dom";
 import './App.css';
 import Home from './components/Home';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
-import {Route,Routes} from "react-router-dom";
 import Signup from './components/Signup';
 import GameList from './components/GameList';
 import Cart from './components/Cart';
 import CheckOut from './components/CheckOut';
 import Payment from './components/Payment';
+import PaymentCard from './components/PaymentCard';
 
 function App() {
 
@@ -27,6 +27,7 @@ function App() {
         <Route path="/cart" element={<Cart/>} />
         <Route path="/checkOut" element={<CheckOut/>} />
         <Route path="/payment" element={<Payment/>} />
+        <Route path="/PaymentCard" element={<PaymentCard/>} />
       </Routes>
     </>
   );
